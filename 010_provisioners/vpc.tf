@@ -59,7 +59,7 @@ resource "aws_security_group" "app-sg" {
   }
 
   ingress {
-    cidr_blocks = ["182.65.153.73/32"]
+    cidr_blocks = ["0.0.0.0/0"]
     description = "SSH"
     from_port   = 22
     protocol    = "tcp"
